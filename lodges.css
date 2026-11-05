@@ -1,0 +1,262 @@
+.lodge-grid {
+
+  display: grid;
+
+  grid-template-columns: repeat(3, 1fr);
+
+  gap: 13px;
+
+}
+
+.lodge-card {
+
+  height: 350px;
+
+  background: linear-gradient(180deg, #062038, #041523);
+
+  border: 1px solid #008dd4;
+
+  border-radius: 11px;
+
+  overflow: hidden;
+
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+
+  transition: 1s;
+
+}
+
+.lodge-card:hover{
+
+  box-shadow: 3px 6px 12px #00d9ff;
+
+}
+
+.lodge-image {
+
+  height: 210px;
+
+  position: relative;
+
+}
+
+.lodge-image img {
+
+  width: 100%;
+
+  height: 100%;
+
+  display: block;
+
+  object-fit: cover;
+
+  border-radius: 0px 0px 5px 5px;
+
+}
+
+.dashboard{
+
+    grid-template-columns: 1fr;
+
+    background-color:#020b14;
+
+}
+
+.card-body {
+
+  padding: 9px 12px 12px;
+
+  margin-top: 20px;
+
+}
+
+.card-body h3 {
+
+  font-size: 16px;
+
+  margin-bottom: 5px;
+
+  color:aliceblue;
+
+}
+
+.price-line {
+
+  display: flex;
+
+  justify-content: space-between;
+
+  align-items: end;
+
+  margin-top: 11px;
+
+  gap: 7px;
+
+}
+
+.price-line strong {
+
+  font-size: 20px;
+
+  color: #1dff69;
+
+}
+
+.price-line small {
+
+  font-size: 10px;
+
+  color: #fff;
+
+}
+
+.price-line em {
+
+  display: block;
+
+  font-style: normal;
+
+  font-size: 10px;
+
+  color: #fff;
+
+}
+
+.price-line button {
+
+  border: 0;
+
+  color: #fff;
+
+  background: linear-gradient(90deg, #ff00c8, #ff9500);
+
+  border-radius: 8px;
+
+  padding: 10px 12px;
+
+  font-weight: 800;
+
+  font-size: 11px;
+
+  white-space: nowrap;
+
+}
+
+.verified,
+
+.distance {
+
+  position: absolute;
+
+  top: 5px;
+
+  padding: 6px 9px;
+
+  border-radius: 8px;
+
+  font-size: 11px;
+
+  font-weight: 800;
+
+}
+
+.verified {
+
+  left: 9px;
+
+  background: #00f36a;
+
+  color: #00120a;
+
+}
+
+.distance {
+
+  right: 9px;
+
+  background: #061827;
+
+  color: white;
+
+  border: 1px solid #fff;
+
+}
+
+
+@media (max-width: 1024px) {
+
+  .lodge-grid {
+
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 13px;
+
+  }
+
+}
+@media (max-width: 768px) {
+
+  .lodge-grid {
+
+    grid-template-columns: 1fr;
+
+    gap: 13px;
+
+  }
+
+}
+
+@media (max-width: 480px) {
+
+  .lodge-grid {
+
+    grid-template-columns: 1fr;
+
+    gap: 12px;
+
+  }
+
+  .lodge-card {
+
+    height: auto;
+
+  }
+
+  .lodge-image {
+
+    height: 210px;
+
+  }
+
+  .card-body {
+
+    padding: 9px 12px 12px;
+
+    margin-top: 20px;
+
+  }
+
+  .card-body h3 {
+
+    font-size: 16px;
+
+  }
+
+  .price-line strong {
+
+    font-size: 18px;
+
+  }
+
+  .price-line button {
+
+    padding: 9px 10px;
+
+    font-size: 10px;
+
+  }
+  .price-line button a{
+    text-decoration:none;
+  }
+
+}
